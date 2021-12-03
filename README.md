@@ -1,6 +1,8 @@
 # pvalo
 Pysäytys valo skripti
 
-menee ykkösestä päälle
+Default Config
 
-configit pvalo.lua ssa
+local interval = 100
+local extra = 9
+
