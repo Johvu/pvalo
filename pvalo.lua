@@ -9,6 +9,7 @@ local PlayerData        = {}
 
 local interval = 100
 local extra = 9
+local button = 157 -- https://docs.fivem.net/docs/game-references/controls/
 
 --- ja sen loppu
 
@@ -29,7 +30,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
         -- mitä nappia painettu 
-        if IsControlJustReleased(0, 157) then
+        if IsControlJustReleased(0, button) then
             -- työ check
             if PlayerData.job.name == 'police' or PlayerData.job.name == 'sheriff' or PlayerData.job.name == 'krp' then
                 if not lighton then
