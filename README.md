@@ -1,6 +1,8 @@
 # pvalo
 Pysäytys valo skripti
 
+jos tulee ongelmia nii yhteyttä Johvu#6969
+
 Default Config
 
     local interval = 100 -- Valon vilkkumis nopeus
