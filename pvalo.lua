@@ -54,10 +54,9 @@ Citizen.CreateThread(function()
 end)
 
 Citizen.CreateThread(function()
-    local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
-
     while true do
-      Wait(1)
+      Citizen.Wait(1)
+      local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
       if lighton then
 		if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() then 
             if state then
