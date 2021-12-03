@@ -8,7 +8,7 @@ local PlayerData        = {}
 -- PRO CONFIG
 
 local interval = 500 -- speed of the light
-local extra = 9 -- extra int
+local extra = 1 -- extra int usally 1-9
 local button = 157 -- https://docs.fivem.net/docs/game-references/controls/
 
 --- ja sen loppu
