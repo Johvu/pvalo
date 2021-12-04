@@ -52,14 +52,17 @@ Citizen.CreateThread(function()
             if hasperms then
                 if not lighton then
 					if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() then 
-                    exports['mythic_notify']:SendAlert('success', 'Pysätysvalo päällä')
+                    --exports['mythic_notify']:SendAlert('success', 'Pysätysvalo päällä')
+		    ESX.ShowNotification('Pysätysvalo päällä')
 
                     lighton = true
 					end
                 else
 					if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() then 
 						lighton = false
-                    exports['mythic_notify']:SendAlert('error', 'Pysätysvalo pois päältä')
+                    --exports['mythic_notify']:SendAlert('error', 'Pysätysvalo pois päältä')
+		   		    ESX.ShowNotification('Pysätysvalo pois päältä')
+
 					end
                 end
 			else
