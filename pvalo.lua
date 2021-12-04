@@ -1,4 +1,3 @@
-
 ESX = nil
 local lighton = false
 local PlayerData        = {}
@@ -9,7 +8,7 @@ local hasperms = false
 -- PRO CONFIG
 
 local interval = 500 -- speed of the light
-local extra = 1 -- extra int usally 1-9
+local extra = 9 -- extra int usally 1-9
 local enableESX = true -- enables job check
 local button = 157 -- https://docs.fivem.net/docs/game-references/controls/
 
@@ -76,7 +75,7 @@ Citizen.CreateThread(function()
       local vehicle = GetVehiclePedIsUsing(GetPlayerPed(-1))
       if lighton then
 		if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() then 
-            if IsVehicleExtraTurnedOn(vehicle, 1) then
+            if not IsVehicleExtraTurnedOn(vehicle, extra) then
                 SetVehicleExtra(vehicle, extra, false)
             else
                 SetVehicleExtra(vehicle, extra, true)
@@ -88,10 +87,9 @@ Citizen.CreateThread(function()
             Wait(500)
         end
     else
-		if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() then
+		if IsVehicleExtraTurnedOn(vehicle, extra) then
 			SetVehicleExtra(vehicle, extra, true)
 			SetVehicleAutoRepairDisabled(vehicle, true)
-			Wait(2500)
 		end
         Wait(2500)
      end
