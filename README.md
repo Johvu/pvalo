@@ -10,7 +10,7 @@ Lataus
 Yleisiä ongelmia
 
 1. Extra configissa on väärä jolloin valo ei toimi
-2. Autossa ei ole valoa joten valo ei toimi
+2. Autosi modelissa ei ole valoa joten valo ei toimi
 3. Sulla on enableESX truella servulla jossa sinulla ei ole esx:ää
 
 jos tulee ongelmia nii yhteyttä Johvu#6969
