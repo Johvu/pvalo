@@ -13,7 +13,7 @@ Yleisiä ongelmia
 2. Autosi modelissa ei ole valoa joten valo ei toimi
 3. Sulla on enableESX truella servulla jossa sinulla ei ole esx:ää
 
-jos tulee ongelmia nii yhteyttä Johvu#6969
+jos tulee ongelmia nii yhteyttä Johvu#0761
 
 Default Config
 
