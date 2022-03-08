@@ -22,4 +22,4 @@ Default Config
     local button = 157 -- https://docs.fivem.net/docs/game-references/controls/
     local enableESX = true -- enables job check
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=johvu&layout=compact)](https://github.com/Johvu/pvalo)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=johvu&exclude_repo=pvalo,johvu.github.io)](https://github.com/Johvu/pvalo)
